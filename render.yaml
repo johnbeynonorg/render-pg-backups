@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker
     name: pg-backups
     env: ruby
     region: frankfurt
