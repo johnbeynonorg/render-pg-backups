@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: pg-backups
+    env: ruby
+    buildCommand: ./render-build.sh
+    startCommand: ./render-start.sh
+
+    disk:
+      name: pg-backups
+      mountPath: /opt/backups
+      sizeGB: 10 # optional
+
